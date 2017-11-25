@@ -45,12 +45,8 @@
       static get is() { return 'my-new-view'; }
       ready(){
         super.ready();
-      //  const carousel = this.$.gal;
-        const carousel = document.shadowRoot.querySelector('my-carousel');
-         //document.querySelector('my-carousel');
-
-        console.log(carousel);
-        setInterval(_ => carousel.next(), 3000);
+        const carousel = this.$.gal;
+        setInterval(_ => carousel.next(),5000);
       }
     }
 
